@@ -283,6 +283,9 @@ section.home .img-prayer img {
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+.time-pray .div-time .timer:hover{
+    transform: scale(1.05);
+}
 .layer{
     background-color: #ffffff;
     height: 150px;
@@ -290,6 +293,15 @@ section.home .img-prayer img {
     position: relative;
     z-index: 3;
     border: 2px solid #ffb400;
+}
+.layer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3rem;
+    color: #333;
+    /* font-weight: 600; */
 }
 .time-pray .div-time .timer .name-cycle{
     position: absolute;
