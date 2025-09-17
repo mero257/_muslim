@@ -82,6 +82,7 @@ ul li a.active {
     background-color: #ffb400;
     color: #fff;
 }
+/* ////////////////////////////////////////////////////////////////////////////HOME/////////////////////////////////////////////////////////////////// */
 
 section.home {
     max-width: 1350px;
@@ -162,6 +163,7 @@ section.home .img-prayer img {
     color: #ffb400;
     font-size: 2.3rem;
     text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -232,6 +234,119 @@ section.home .img-prayer img {
     margin-bottom: 20px;
 
 }
+/* section.sec1{
+    display: none;
+} */
+
+/* ////////////////////////////////////////////////////////////////////////////HOME/////////////////////////////////////////////////////////////////// */
+.time-pray{
+    display: none;
+}
+.time-pray .search{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    width: 41%;
+    margin: auto;
+}
+.time-pray .search input{
+    height: 40px;
+    width: 100%;
+    padding-right:10px;
+    border-radius: 5rem;
+    border: 2px solid #ffb400;
+    
+}
+.time-pray .search i{
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffb400;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.time-pray .div-time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1.8rem;
+    
+}
+.time-pray .div-time .timer{
+    width:150px ;
+    height: 150px;
+    /* background-color: blue; */
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.layer{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 3;
+    border: 2px solid #ffb400;
+}
+.time-pray .div-time .timer .name-cycle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.layer2{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -40px;
+    z-index: 100000;
+    background-color: #ffffff;
+    border: 2px solid #ffb400;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.time-pray .div-time .timer .name-cycle p{
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////MEDIA/////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 600px) {
     .nav-items{
@@ -260,4 +375,14 @@ section.home .img-prayer img {
     section.home .img-prayer {
         display: none;
     }
+    .time-pray .search{
+        top: 20px;
+        width: 70%;
+    }
+    .time-pray .div-time{
+        grid-template-columns: repeat(1,1fr);
+        gap: 4rem;
+        margin: 450px 0 0 0 ;
+    }
 }
+/* ////////////////////////////////////////////////////////////////////////////MEDIA/////////////////////////////////////////////////////////////////// */
