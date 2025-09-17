@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+span {
+    color: #F45050;
+}
+.list{
+    display: none;
+}
+
+span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #e4e0e0;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 90px;
+}
+
+nav {
+    max-width: 1350px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 100%;
+    width: 120px;
+    filter: drop-shadow(0 4px 5px #ffb30076);
+}
+
+nav .mode {
+    font-size: 32px;
+    cursor: pointer;
+    color: #ffb400;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+nav .mode:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+ul li a {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+ul li a.active {
+    background-color: #ffb400;
+    color: #fff;
+}
+
+section.home {
+    max-width: 1350px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+section.home .home-text {
+    width: 63%;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background-color: red; */
+    padding-right: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+}
+
+section.home .img-prayer {
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section.home .img-prayer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img1,
+.img2,
+.img3 {
+    filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.3));
+    border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    background-color: tomato;
+    outline: #ffb400 solid 3px;
+}
+
+.img1 {
+    width: 160px;
+    transform: rotate(-3deg);
+}
+
+.img2 {
+    width: 140px;
+    transform: rotate(2deg);
+    z-index: 2;
+}
+
+.img3 {
+    width: 120px;
+    transform: rotate(-2deg);
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.05) rotate(0deg);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+    z-index: 3;
+}
+
+
+.home-text ul h1 {
+    color: #ffb400;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+
+
+.home-text ul li {
+    margin-bottom: 20px;
+    list-style: inside;
+    list-style-type: decimal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #F45050;
+    margin-top: 10px;
+}
+
+.home-text ul p {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: .95rem;
+    color: #333;
+}
+
+.blocks {
+    max-width: 1350px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.home-text ul h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #F45050;
+}
+
+.sec3 .home-text ul li {
+    color: #333;
+    font-size: 1rem;
+
+}
+
+.p1,
+.p2,
+.p3 {
+    height: 2px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.p1 {
+    width: 80%;
+    margin-bottom: 2px;
+}
+
+.p2 {
+    width: 60%;
+    margin-bottom: 2px;
+}
+
+.p3 {
+    width: 40%;
+    margin-bottom: 2px;
+}
+
+.p_space {
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 600px) {
+    .nav-items{
+        display: none;
+    }
+    .icons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .list{
+        display: block;
+        color: #ffb400;
+        font-size: 1.3rem;
+    }
+    section.home{
+        position: relative;
+    }
+
+    section.home .home-text {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    section.home .img-prayer {
+        display: none;
+    }
+}
